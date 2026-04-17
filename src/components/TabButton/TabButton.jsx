@@ -1,6 +1,6 @@
 import './TabButton.css';
 
-export default function TabButton(children) {
+export default function TabButton({children}) {
   return (
     <li>
         <button> {children} </button>

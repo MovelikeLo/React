@@ -1,6 +1,7 @@
 import { CORE_CONCEPTS } from './data';
 import Header from './components/Header/Header';
 import CoreConcept from './components/CoreConcepts/CoreConcepts';
+import TabButton from './components/TabButton/TabButton';
 // function UserData(){
 //   const user = {first:"George",last:"Salayka", age:"40" };
 
