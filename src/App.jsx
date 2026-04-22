@@ -2,7 +2,7 @@ import { CORE_CONCEPTS, EXAMPLES} from './data';
 import Header from './components/Header/Header';
 import CoreConcept from './components/CoreConcepts/CoreConcepts';
 import TabButton from './components/TabButton/TabButton';
-import { use, useState } from 'react';
+import {useState} from 'react';
 // function UserData(){
 //   const user = {first:"George",last:"Salayka", age:"40" };
 
@@ -69,10 +69,10 @@ if (selectedTopic) {
         <section id="examples">
           <h2>Examples</h2>
           <menu>
-            <TabButton onSelect={() => handleSelect('Components')}>Components</TabButton>
-            <TabButton onSelect={() => handleSelect('JSX')}>JSX</TabButton>
-            <TabButton onSelect={() => handleSelect('Props')}>Props</TabButton>
-            <TabButton onSelect={() => handleSelect('State')}>State</TabButton>
+            <TabButton isSelected={selectedTopic==="components"} onSelect={() => handleSelect("components")}>Components</TabButton>
+            <TabButton isSelected={selectedTopic==="jsx"} onSelect={() => handleSelect("jsx")}>JSX</TabButton>
+            <TabButton isSelected={selectedTopic==="props"} onSelect={() => handleSelect("props")}>Props</TabButton>
+            <TabButton isSelected={selectedTopic==="state"} onSelect={() => handleSelect("state")}>State</TabButton>
           </menu>
             {tabContent}
         </section>
